@@ -16,7 +16,7 @@ class NewWorld extends Component {
     return (
       
       <View>
-            <View style={{height: 40, borderWidth: 1, borderColor: 'red'}}>
+            <View style={styles.style_1}>
 
             </View>
       </View>
@@ -30,13 +30,13 @@ const styles = StyleSheet.create({
     // borderWidth: 1,  
     // borderColor: 'red',
   // },
-  // style_1:{
-  //   // border: '1px solid red',
-  //   flex: 5,
-  //   height: 40,
-  //   borderWidth: 1,
-  //   borderColor: 'red',
-  // }
+  style_1:{
+    border: '1px solid red',
+    flex: 5,
+    height: 40,
+    borderWidth: 1,
+    borderColor: 'red',
+  }
 
 });
 
