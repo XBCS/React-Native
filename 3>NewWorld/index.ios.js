@@ -55,24 +55,35 @@ class NewWorld extends Component {
         stretch
       */
 
+      // <View style={styles.style_0}>
+
+      //   <View style={[styles.view, ]}>
+      //     <Text>自由摆放</Text>
+      //   </View>
+
+      //   <View style={[styles.view, styles.center]}>
+      //     <Text>居中摆放</Text>
+      //   </View>
+
+      //   <View style={[styles.view, styles.left]}>
+      //     <Text>左对齐</Text>
+      //   </View>
+
+      //   <View style={[styles.view, styles.right]}>
+      //     <Text>右对齐</Text>
+      //   </View>
+
+      // </View>
+
+      /*
+        4. 水平/垂直居中
+        alignItems是alignSelf的变种, 跟alignSelf的功能类似, 可用于水平居中;
+        justifyContent用于垂直居中, 属性较多可以了解一下.
+      */
       <View style={styles.style_0}>
-
         <View style={[styles.view, ]}>
-          <Text>自由摆放</Text>
+          <Text>方框在水平和垂直方向上都居中</Text>
         </View>
-
-        <View style={[styles.view, styles.center]}>
-          <Text>居中摆放</Text>
-        </View>
-
-        <View style={[styles.view, styles.left]}>
-          <Text>左对齐</Text>
-        </View>
-
-        <View style={[styles.view, styles.right]}>
-          <Text>右对齐</Text>
-        </View>
-
       </View>
 
     );
@@ -104,27 +115,41 @@ const styles = StyleSheet.create({
 
   // 3. alignSelf: 对齐方式
 
-  style_0: {
+  // style_0: {
 
+  //   flex: 1,
+  //   borderColor: 'red',
+  //   borderWidth: 0.5,
+
+  // },
+  // view: {
+  //   borderWidth: 5,
+  //   borderColor: 'blue',
+  //   width: 100,
+  //   height: 40
+  // },
+  // center: {
+  //   alignSelf: 'center'
+  // },
+  // left: {
+  //   alignSelf: 'flex-start'
+  // },
+  // right: {
+  //   alignSelf: 'flex-end'
+  // }
+
+  // 4. 水平/垂直居中
+  style_0: {
     flex: 1,
     borderColor: 'red',
     borderWidth: 0.5,
-
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   view: {
-    borderWidth: 5,
+    borderWidth: 3,
+    height: 50,
     borderColor: 'blue',
-    width: 100,
-    height: 40
-  },
-  center: {
-    alignSelf: 'center'
-  },
-  left: {
-    alignSelf: 'flex-start'
-  },
-  right: {
-    alignSelf: 'flex-end'
   }
 
 });
